@@ -29,7 +29,7 @@ const images = [
 ];
 
 
-const gallery = document.querySelector("ul")
+const gallery = document.querySelector("ul.gallery")
 
 for (const image of images) {
   const liElem = document.createElement('li');
@@ -45,7 +45,7 @@ for (const image of images) {
 }
 
 
-// // gallery.style.height = '300px';
+
 // gallery.style.display = 'flex';
 // gallery.style.flexWrap = 'wrap';
 // gallery.style.justifyContent = 'space-between'
