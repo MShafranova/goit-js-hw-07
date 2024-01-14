@@ -27,3 +27,29 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+
+const gallery = document.querySelector("ul")
+
+for (const image of images) {
+  const liElem = document.createElement('li');
+  const imgElem = document.createElement('img');
+  imgElem.src = image.url;
+  imgElem.alt= image.alt;
+  // imgElem.width = '300px';
+  // liElem.classList.add(li-style)
+  // liElem.style.gap = '24px'
+  // liElem.style.width = '300px';
+  liElem.append(imgElem)
+  gallery.append(liElem)
+}
+
+
+// // gallery.style.height = '300px';
+// gallery.style.display = 'flex';
+// gallery.style.flexWrap = 'wrap';
+// gallery.style.justifyContent = 'space-between'
+// gallery.style.listStyle = 'none'
+// gallery.style.gap = '24px'
+
+
