@@ -11,7 +11,7 @@ function formSubmit(event) {
     const emailValue = emailInput.value.trim();
     const passwordValue = passwordInput.value.trim();
 
-    if (emailInput === "" || passwordInput === "") {
+    if (emailValue === "" || passwordValue === "") {
       alert("All form fields must be filled in");
     } else {
       const userInfo = {
