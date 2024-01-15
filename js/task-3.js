@@ -3,7 +3,5 @@ const outputElem = document.querySelector("span");
 
 userInput.addEventListener("input", (event) => {
   const currentValue = event.currentTarget.value.trim();
-  if (currentValue !== "") {
-    outputElem.textContent = currentValue;
-  }
+  outputElem.textContent = currentValue === '' ? 'Anonymous' : currentValue;
 });
