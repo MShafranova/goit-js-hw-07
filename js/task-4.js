@@ -19,7 +19,8 @@ function formSubmit(event) {
         password: passwordValue,
       };
       console.log(userInfo);
+      loginForm.reset();
     }
-    loginForm.reset();
+   
   }
 }
