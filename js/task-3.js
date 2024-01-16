@@ -1,7 +1,7 @@
-const userInput = document.querySelector("input");
-const outputElem = document.querySelector("span");
+const nameInput = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
 
-userInput.addEventListener("input", (event) => {
+nameInput.addEventListener("input", (event) => {
   const currentValue = event.currentTarget.value.trim();
-  outputElem.textContent = currentValue === "" ? "Anonymous" : currentValue;
+  nameOutput.textContent = currentValue === "" ? "Anonymous" : currentValue;
 });
